@@ -12,12 +12,19 @@ Autora: **Angie Julieth Ramos Cortes – Ingeniería de Sistemas**
 ## Getting Started
 
 Estas instrucciones te permiten **clonar**, **compilar** y **ejecutar** el proyecto en local, y después **empaquetarlo en Docker**. Más abajo encontrarás las notas de **despliegue en producción** (AWS EC2).
+<img width="921" height="236" alt="image" src="https://github.com/user-attachments/assets/1bf94b45-859a-41b0-b2d0-48c2b9e47ea7" />
+<img width="921" height="210" alt="image" src="https://github.com/user-attachments/assets/07ecfec6-fa3b-4e31-a39a-f9ac5cbc77d1" />
+<img width="921" height="92" alt="image" src="https://github.com/user-attachments/assets/7eb21ed0-f130-4cfb-a463-979e8ac46e7b" />
+
+
+
+
 
 ### Endpoints
 
 | Método | Ruta        | Descripción                          |
 |--------|-------------|--------------------------------------|
-| GET    | `/greeting` | Saludo. Soporta `?name=<tu_nombre>`  |
+| GET    | `/greeting` | Saludo. Soporta Angie  |
 
 ---
 
@@ -44,14 +51,12 @@ docker --version
 ### 1) Clonar y compilar
 
 ```sh
-git clone <URL-DE-TU-REPO> hello-spring-docker
+git clone https://github.com/AngieRamosCortes/hello-spring-docker.git
 cd hello-spring-docker
 mvn clean package -DskipTests
 ```
 
 ### 2) Ejecutar en local (sin Docker)
-
-La app toma el puerto de la variable `PORT`. Si no existe, usa `5000`.
 
 #### Windows (PowerShell/CMD)
 
@@ -67,8 +72,8 @@ java -cp "target/classes:target/dependency/*" co.edu.eci.hello.RestServiceApplic
 
 Prueba en tu navegador:
 
-- [http://localhost:5000/greeting](http://localhost:5000/greeting)
-- [http://localhost:5000/greeting?name=Angie](http://localhost:5000/greeting?name=Angie)
+- [http://localhost:4567/hello](http://localhost:4567/hello)
+<img width="921" height="110" alt="image" src="https://github.com/user-attachments/assets/fa07238e-5a15-4ccb-8568-be70f69416b7" />
 
 ---
 
@@ -96,6 +101,16 @@ mvn clean package -DskipTests
 docker build -t hello-spring-docker:latest .
 docker images
 ```
+<img width="921" height="571" alt="image" src="https://github.com/user-attachments/assets/71bde12e-d736-4a70-aaff-ad43449d42f8" />
+<img width="921" height="108" alt="image" src="https://github.com/user-attachments/assets/d6b4adea-7a24-4975-aa13-2b8ac99ea652" />
+<img width="921" height="92" alt="image" src="https://github.com/user-attachments/assets/03602dfc-f6ad-44be-af92-e7b032a32adb" />
+<img width="921" height="483" alt="image" src="https://github.com/user-attachments/assets/cf4ff879-c34c-4e98-9f7d-ea56c698e5a3" />
+<img width="921" height="391" alt="image" src="https://github.com/user-attachments/assets/87742a9c-77e2-4175-835a-96b0d9eb122e" />
+<img width="921" height="376" alt="image" src="https://github.com/user-attachments/assets/42061d0d-7d89-43dc-8271-23e27c89c541" />
+<img width="921" height="310" alt="image" src="https://github.com/user-attachments/assets/6b7a778f-3a1a-4424-b014-46adc9f7299d" />
+<img width="921" height="213" alt="image" src="https://github.com/user-attachments/assets/185855af-1ba6-4bfd-a9d8-27aeb1205d90" />
+<img width="921" height="306" alt="image" src="https://github.com/user-attachments/assets/5d4ba002-d952-4c60-b5f8-cfa2d46325a1" />
+
 
 ### 3) Correr el contenedor
 
@@ -108,8 +123,13 @@ docker ps
 
 Prueba:
 
-- [http://localhost:34000/greeting](http://localhost:34000/greeting)
-- [http://localhost:34000/greeting?name=Angie](http://localhost:34000/greeting?name=Angie)
+- [http://localhost:34000/hello](http://localhost:34000/hello)
+- [http://localhost:34001/hello](http://localhost:34001/hello)
+
+  <img width="921" height="94" alt="image" src="https://github.com/user-attachments/assets/b8aa856b-64c6-4f20-8411-2bc59333adb4" />
+  <img width="921" height="92" alt="image" src="https://github.com/user-attachments/assets/f344ebdc-1438-4f53-ac7e-369fe7684c4a" />
+  <img width="921" height="213" alt="image" src="https://github.com/user-attachments/assets/82ab4c68-cd1b-448b-b7e8-f7f30ba0863b" />
+
 
 ---
 
@@ -124,6 +144,22 @@ docker push angieramoscortes/hello-spring-docker:latest
 ---
 
 ## Deployment (AWS EC2)
+<img width="921" height="306" alt="image" src="https://github.com/user-attachments/assets/de2d048c-157d-4e52-9895-d76c2fbd290f" />
+<img width="921" height="227" alt="image" src="https://github.com/user-attachments/assets/10942e93-8838-42a9-8f19-68bebaac7312" />
+<img width="921" height="309" alt="image" src="https://github.com/user-attachments/assets/61d5f558-5b6f-4f1e-8b5a-eba36fb55cb5" />
+<img width="921" height="109" alt="image" src="https://github.com/user-attachments/assets/a6f5effe-f35b-472b-813a-3f0fe7f972e3" />
+<img width="921" height="135" alt="image" src="https://github.com/user-attachments/assets/44536d9a-8938-4737-94e2-c522ee8d14d4" />
+<img width="921" height="298" alt="image" src="https://github.com/user-attachments/assets/b615a50b-cce5-499f-b657-da3e76ec9955" />
+<img width="921" height="81" alt="image" src="https://github.com/user-attachments/assets/94b729e3-5a08-48fe-8d60-46def10b3c5c" />
+![Uploading image.png…]()
+
+
+
+
+
+
+
+
 
 ### 0) Preparación
 
