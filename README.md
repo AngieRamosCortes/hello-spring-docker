@@ -8,6 +8,9 @@ Esta aplicación implementa un **framework web personalizado** con **endpoints R
 El objetivo es practicar: creación de proyectos con **Maven**, empaquetado, **construcción de imágenes** en Docker, **publicación** en Docker Hub y **despliegue** en una instancia de **Amazon Linux**.
 
 Autora: **Angie Julieth Ramos Cortes – Ingeniería de Sistemas**
+<img width="1919" height="505" alt="image" src="https://github.com/user-attachments/assets/8e961219-104a-453f-bdca-670c63a3ccca" />
+<img width="1918" height="260" alt="image" src="https://github.com/user-attachments/assets/ae3c10ae-8af4-4feb-8583-d539dac73429" />
+
 
 ---
 
